@@ -5,9 +5,9 @@
 <div class="container threads">
     <h1>{{ object.title }}</h1>
     <h2>{% trans "Text that this referendum will remove from our rules" %}</h2>
-    <p>{{object.text_remove_rules }}</p>
+    <p class="newlines">{{object.text_remove_rules }}</p>
     <h2>{% trans "Text that this referendum will add to our rules" %}</h2>
-    <p>{{object.text_add_rules }}</p>
+    <p class="newlines">{{object.text_add_rules }}</p>
     <p></p>
     <div class="row" ng-controller="CommentsController" data-ng-init="initThread('referendum', {{object.id}}, {{ object.comment_id}})">
         <div class="col-md-12">

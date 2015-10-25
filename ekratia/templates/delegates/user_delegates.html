@@ -8,12 +8,17 @@
             <div class="col-md-12">
                 <h1>{% trans "My Delegates" %}</h1>
 
-                <h2>{% trans "Your current Delegates" %}</h2>
+                <h2>{% trans "Your Current Delegates" %}</h2>
                 {% verbatim %}
+
                 <div class="row">
-                    <div class="well" ng-hide="assigned_delegates.length>0">
-                        Currently you don't have delegates
+                    <div class="col-xs-12">
+                        <div class="alert alert-warning alert-dismissible" role="alert" ng-hide="assigned_delegates.length>0">
+                          Currently you don't have delegates
+                        </div>
                     </div>
+                </div>
+                <div class="row top20">
                     <div class="delegate active col-xs-6 col-sm-3 col-md-2" ng-repeat="user in assigned_delegates">
                         <div class="thumbnail">
                             <div class="delegate-action color-red">
@@ -28,21 +33,24 @@
                 </div>
                 {% endverbatim %}
 
-                <h2>{% trans "Add more Delegates" %}</h2>
+                <h2>{% trans "Add More Delegates" %}</h2>
                 {% verbatim %}
-                <div class="row">
+                <div class="row top20">
                     <div class="form-group">
                         <div class="col-md-4">
                             <input type="text" placeholder="Search By Name" ng-model="filter_name" ng-change="loadAvailableDelegates()" class="form-control input-md">
                         </div>
                     </div>
                 </div>
-                <br>
-                <div class="row">
-                    <div class="well" ng-hide="available_delegates.length>0">
-                        We don't have more delegates for you
+                <div class="row top20" ng-hide="available_delegates.length>0">
+                    <div class="col-xs-12">
+                        <div class="alert alert-warning alert-dismissible" role="alert">
+                          There are not available delegates.
+                        </div>
                     </div>
-                    <div class="delegate active col-xs-6 col-sm-3 col-md-2" ng-repeat="user in available_delegates">
+                </div>
+                <div class="row">
+                    <div class="delegate active col-xs-6 col-sm-3 col-md-2 top20" ng-repeat="user in available_delegates">
                         <div class="thumbnail">
                             <div class="delegate-action">
                                 <a href="" title="Delegate User" ng-click="addDelegate(user)"><i class="fa fa-plus-circle"></i></a>

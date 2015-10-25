@@ -9,7 +9,7 @@
 		
 		<h1>{% trans "Start a Conversation" %}</h1>
 
-		<form action="{% url 'threads:create' %}" method="post" id="thread-create-form">
+		<form action="{% url 'threads:create' %}" method="post" id="thread-create-form" class="page-content">
 			{% csrf_token %}
 		    {% bootstrap_form_errors form type='non_fields' %}
             {% bootstrap_field form.title show_label=false %}

@@ -72,6 +72,9 @@ ul {
 .newlines {
   white-space: pre-wrap; }
 
+.top20, .page-content {
+  margin-top: 20px; }
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   h1 {
@@ -132,9 +135,9 @@ ol {
   border-color: #d6e9c6; }
 
 .alert-warning {
-  color: black;
-  background-color: orange;
-  border-color: #d6e9c6; }
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc; }
 
 .alert-error {
   color: #b94a48;

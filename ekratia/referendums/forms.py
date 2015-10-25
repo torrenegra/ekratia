@@ -14,10 +14,10 @@ class ReferendumForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(ReferendumForm, self).__init__(*args, **kwargs)
         self.fields['text_remove_rules'].widget = forms.Textarea(
-            attrs={'rows': '2', 'ng-model': 'message', 'msd-elastic': '',
+            attrs={'rows': '2', 'ng-model': 'text1', 'msd-elastic': '',
                    'maxlength': '1000', 'placeholder': ''})
         self.fields['text_add_rules'].widget = forms.Textarea(
-            attrs={'rows': '2', 'ng-model': 'message', 'msd-elastic': '',
+            attrs={'rows': '2', 'ng-model': 'text2', 'msd-elastic': '',
                    'maxlength': '1000', 'placeholder': ''})
 
 
