@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/torrenegra/ekratia.png?label=ready&title=Ready)](https://waffle.io/torrenegra/ekratia)
 # ekratia
 
 Build status: [ ![Codeship Status for andresgz/ekratia](https://codeship.com/projects/4c721cd0-4b45-0133-6c6e-42582d25518d/status?branch=master)](https://codeship.com/projects/106207)
